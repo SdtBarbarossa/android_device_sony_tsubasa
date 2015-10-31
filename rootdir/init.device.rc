@@ -1,7 +1,10 @@
 on boot
     # Vibrator
-    chown system system /sys/devices/virtual/timed_output/vibrator/level
-    chmod 666 /sys/devices/virtual/timed_output/vibrator/level
+    chown system system /sys/class/timed_output/vibrator/level
+    chmod 666 /sys/class/timed_output/vibrator/level
+
+    # Set vibrator intensity 100%
+    write /sys/class/timed_output/vibrator/level 27
 
     # LED fix
     chown system system /sys/class/leds/pwr-red/use_pattern

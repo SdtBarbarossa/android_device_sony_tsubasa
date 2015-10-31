@@ -6,3 +6,7 @@ ro.sf.lcd_density=320
 
 # Scheduler
 sys.io.scheduler=fiops
+
+# By default, primary storage is physical
+ro.vold.primary_physical=1
+ro.telephony.ril.config=simactivation
